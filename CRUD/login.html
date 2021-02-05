@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+     crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"></script>
+    <title>CRUD Application</title>
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Signup</h1>
+                <input type="text" name="fname" placeholder="Name *" required/>
+                <input type="email" name="mname" placeholder="Email *" required/>
+                <input type="number" name="lname" placeholder="ID Number *" required/>
+                <select required name="gradelevel">
+                    <option value="" disabled selected hidden>Choose your college</option>
+                    <option>College of Arts and Sciences</option>
+                    <option>College of Business</option>
+                    <option>College of Education</option>
+                    <option>College of Public Administration</option>
+                    <option>College of Technologies</option>
+                  </select>
+                <input type="text" placeholder="Course *" required/>
+                
+                    <input type="submit" class="btnRegister" value="Signup"></input>
+                    
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+
+            <form action="/php/connect.php" method="POST">
+                <h1>Login</h1>
+                <input type="text" placeholder="Username" required/>
+                <input type="password" id="password" name="Password" placeholder="Password" required/>
+                <div class="checkbox">
+                    <input type="checkbox" onclick="myFunction()">Show Password
+               </div>
+               <input type="submit" class="btnRegister" value="Login"></input>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <img src="/img/Logo_of_Bukidnon_State_University.png" id="buksu" alt=""/>
+                    <h1>Welcome to</h1>
+                    <p>Bukidnon State University</p>
+                    <button class="ghost" id="signIn">Login</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <img src="/img/Logo_of_Bukidnon_State_University.png" id="buksu" alt=""/>
+                    <h1>Welcome to</h1>
+                    <p>Bukidnon State University</p>
+                    <button class="ghost" id="signUp">Signup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+      <script src="/javascript/auth.js"></script>
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+            crossorigin="anonymous"></script>
+</body>
+</html>
