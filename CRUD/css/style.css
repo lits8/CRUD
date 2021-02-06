@@ -19,9 +19,8 @@ body {
     width: 70%;
     margin-left: -30%;
 }
-#Password{
-    width: 70%;
-    margin-left: -30%;
+#password1{
+    width: 100%;
 }
 .checkbox{
     font-size: 13px;
